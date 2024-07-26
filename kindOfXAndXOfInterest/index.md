@@ -6,4 +6,4 @@ The class X (e.g. Feature, Property, Device) represents the class of entities wh
 Local restrictions on XKind force more specific and more generic concepts to also be of type XKind.
 The hasKind property binds a specific entity to its archetypes. A local restriction on XOfInterest forces any object of the hasKind property to be of archetype XKind. 
 
-the formalisation is available in [ttl](patternKindOfXAndXOfInterest.ttl) and in [owl](patternKindOfXAndXOfInterest.owl)
+The formaliaation is available in [ttl format](patternKindOfXAndXOfInterest.ttl) or [owl format](patternKindOfXAndXOfInterest.owl)
