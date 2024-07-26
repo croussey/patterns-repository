@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://patternKindOfXAndXOfInterest"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://patternKindOfXAndXOfInterest">
+    <Prefix name="" IRI="https://patternKindOfXAndXOfInterest/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="untitled-ontology-238" IRI="https://opendata.inrae.fr/untitled-ontology-238#"/>
+    <Prefix name="patternkindofxandxofinterest" IRI="https://patternKindOfXAndXOfInterest#"/>
+    <Import>http://www.w3.org/2004/02/skos/core</Import>
+    <Declaration>
+        <Class IRI="/X"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/XKind"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/XOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasKind"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasX"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasXKind"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasXOfInterest"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isXKindOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isXOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isXOfInterestOf"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="/XKind"/>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/XKind"/>
+        <Class IRI="/X"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/XOfInterest"/>
+        <Class IRI="/X"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasXKind"/>
+        <ObjectProperty IRI="/hasX"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/hasXOfInterest"/>
+        <ObjectProperty IRI="/hasX"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isXKindOf"/>
+        <ObjectProperty IRI="/isXOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="/isXOfInterestOf"/>
+        <ObjectProperty IRI="/isXOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasX"/>
+        <ObjectProperty IRI="/isXOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasXKind"/>
+        <ObjectProperty IRI="/isXKindOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasXOfInterest"/>
+        <ObjectProperty IRI="/isXOfInterestOf"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isXKindOf"/>
+        <Class IRI="/XKind"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isXOf"/>
+        <Class IRI="/X"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isXOfInterestOf"/>
+        <Class IRI="/XOfInterest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasX"/>
+        <Class IRI="/X"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasXKind"/>
+        <Class IRI="/XKind"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasXOfInterest"/>
+        <Class IRI="/XOfInterest"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/X</IRI>
+        <Literal xml:lang="en">The class X (e.g. Feature, Property, Device) represents the class of entities whose type is indeterminate (neither archetype nor specific). It can be specialized in a class hierarchy. The class X is equivalent to the disjoint union of XKind and XOfInterest</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/XKind</IRI>
+        <Literal xml:lang="en">The class XKind represent the class of archetypes of X. XKind is a subclass of skos:Concept, and these instances are organized into a SKOS model using the skos:broader and skos:narrower properties. Local restrictions on XKind force more specific and more generic concepts to also be of type XKind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/XOfInterest</IRI>
+        <Literal xml:lang="en">The class XOfInterest represents specific X.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/hasKind</IRI>
+        <Literal xml:lang="en">The hasKind property binds a specific entity (instance of class XOfInterest) to its archetypes (instance of class XKind).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/hasX</IRI>
+        <Literal xml:lang="en">The hasX property binds any entity to an instance of class X.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/hasXKind</IRI>
+        <Literal xml:lang="en">The hasXKind property binds any entity to an instance of class XKind.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/hasXOfInterest</IRI>
+        <Literal xml:lang="en">The hasXOfInterest property binds any entity to an instance of class XOfInterest.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/isXKindOf</IRI>
+        <Literal xml:lang="en">The isXKindOf property binds an instance of class XKind to any entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/isXOf</IRI>
+        <Literal xml:lang="en">The isXOf property binds an instance of class X to any entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+        <IRI>/isXOfInterestOf</IRI>
+        <Literal xml:lang="en">The isXOfInterestOf property binds an instance of class XOfInterest to any entity.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
