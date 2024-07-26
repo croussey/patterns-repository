@@ -2,4 +2,4 @@
 
 the schema of the pattern is available at ![Image](pattern.png "schema of pattern Kind of X and X of Interest")
 
-the [formalisation](patternKindOfXAndXOfInterest.ttl) is available in ttl
+the formalisation is available in [ttl](patternKindOfXAndXOfInterest.ttl) and in owl 
